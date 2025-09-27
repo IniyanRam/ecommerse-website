@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog - Premium Electronics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="description" content="Browse our premium electronics catalog with laptops, smartphones, and accessories">
+    <!-- <CHANGE> Added custom styles for enhanced visual appeal -->
+    <style>
+        .product-card {
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .product-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .product-image {
+            transition: transform 0.3s ease-in-out;
+        }
+        .product-card:hover .product-image {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-gray-50 to-gray-100 font-sans">
+    <!-- <CHANGE> Enhanced header with gradient background -->
+    <header class="bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4 py-8">
+            <h1 class="text-4xl font-bold">Premium Electronics</h1>
+            <p class="text-blue-100 mt-2 text-lg">Discover our curated collection of high-quality electronics</p>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-12">
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Featured Products</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" role="list">
+                
+                <!-- Product 1 -->
+                <article class="product-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100" 
+                         itemscope itemtype="https://schema.org/Product"
+                         data-product-id="laptop-001">
+                    <!-- <CHANGE> Updated image with specific product query and enhanced styling -->
+                    <div class="overflow-hidden">
+                        <img src="/placeholder.svg?height=250&width=400" 
+                             alt="MacBook Pro 14-inch" 
+                             class="product-image w-full h-56 object-cover"
+                             itemprop="image">
+                    </div>
+                    
+                    <div class="p-6">
+                        <header class="mb-4">
+                            <h3 class="product-name text-xl font-bold text-gray-900" 
+                                itemprop="name">MacBook Pro 14-inch</h3>
+                            <p class="product-brand text-sm text-blue-600 font-medium" 
+                               itemprop="brand">Apple</p>
+                        </header>
+                        
+                        <p class="product-description text-gray-600 mb-6 leading-relaxed" 
+                           itemprop="description">
+                            Powerful laptop with M3 chip, 16GB RAM, and 512GB SSD. Perfect for creative professionals and developers.
+                        </p>
+                        
+                        <div class="product-pricing flex items-center justify-between mb-4">
+                            <span class="product-price text-3xl font-bold text-green-600" 
+                                  itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                <span itemprop="price" content="1999">$1,999</span>
+                                <meta itemprop="priceCurrency" content="USD">
+                            </span>
+                            <span class="product-availability bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
+                                In Stock
+                            </span>
+                        </div>
+                        
+                        <div class="product-specs flex flex-wrap gap-2">
+                            <span class="spec-item bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">M3 Chip</span>
+                            <span class="spec-item bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">16GB RAM</span>
+                            <span class="spec-item bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">512GB SSD</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 2 -->
+                <article class="product-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100" 
+                         itemscope itemtype="https://schema.org/Product"
+                         data-product-id="phone-001">
+                    <div class="overflow-hidden">
+                        <img src="/placeholder.svg?height=250&width=400" 
+                             alt="iPhone 15 Pro" 
+                             class="product-image w-full h-56 object-cover"
+                             itemprop="image">
+                    </div>
+                    
+                    <div class="p-6">
+                        <header class="mb-4">
+                            <h3 class="product-name text-xl font-bold text-gray-900" 
+                                itemprop="name">iPhone 15 Pro</h3>
+                            <p class="product-brand text-sm text-blue-600 font-medium" 
+                               itemprop="brand">Apple</p>
+                        </header>
+                        
+                        <p class="product-description text-gray-600 mb-6 leading-relaxed" 
+                           itemprop="description">
+                            Latest iPhone with titanium design, A17 Pro chip, and advanced camera system. Available in multiple colors.
+                        </p>
+                        
+                        <div class="product-pricing flex items-center justify-between mb-4">
+                            <span class="product-price text-3xl font-bold text-green-600" 
+                                  itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                <span itemprop="price" content="999">$999</span>
+                                <meta itemprop="priceCurrency" content="USD">
+                            </span>
+                            <span class="product-availability bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
+                                In Stock
+                            </span>
+                        </div>
+                        
+                        <div class="product-specs flex flex-wrap gap-2">
+                            <span class="spec-item bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">A17 Pro</span>
+                            <span class="spec-item bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">128GB</span>
+                            <span class="spec-item bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Titanium</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 3 -->
+                <article class="product-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100" 
+                         itemscope itemtype="https://schema.org/Product"
+                         data-product-id="headphones-001">
+                    <div class="overflow-hidden">
+                        <img src="/placeholder.svg?height=250&width=400" 
+                             alt="AirPods Pro 2nd Gen" 
+                             class="product-image w-full h-56 object-cover"
+                             itemprop="image">
+                    </div>
+                    
+                    <div class="p-6">
+                        <header class="mb-4">
+                            <h3 class="product-name text-xl font-bold text-gray-900" 
+                                itemprop="name">AirPods Pro 2nd Gen</h3>
+                            <p class="product-brand text-sm text-blue-600 font-medium" 
+                               itemprop="brand">Apple</p>
+                        </header>
+                        
+                        <p class="product-description text-gray-600 mb-6 leading-relaxed" 
+                           itemprop="description">
+                            Premium wireless earbuds with active noise cancellation, spatial audio, and up to 30 hours of battery life.
+                        </p>
+                        
+                        <div class="product-pricing flex items-center justify-between mb-4">
+                            <span class="product-price text-3xl font-bold text-green-600" 
+                                  itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                <span itemprop="price" content="249">$249</span>
+                                <meta itemprop="priceCurrency" content="USD">
+                            </span>
+                            <span class="product-availability bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-medium">
+                                Low Stock
+                            </span>
+                        </div>
+                        
+                        <div class="product-specs flex flex-wrap gap-2">
+                            <span class="spec-item bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Active ANC</span>
+                            <span class="spec-item bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">30hr Battery</span>
+                            <span class="spec-item bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Spatial Audio</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 4 -->
+                <article class="product-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100" 
+                         itemscope itemtype="https://schema.org/Product"
+                         data-product-id="tablet-001">
+                    <div class="overflow-hidden">
+                        <img src="/placeholder.svg?height=250&width=400" 
+                             alt="iPad Air 5th Gen" 
+                             class="product-image w-full h-56 object-cover"
+                             itemprop="image">
+                    </div>
+                    
+                    <div class="p-6">
+                        <header class="mb-4">
+                            <h3 class="product-name text-xl font-bold text-gray-900" 
+                                itemprop="name">iPad Air 5th Gen</h3>
+                            <p class="product-brand text-sm text-blue-600 font-medium" 
+                               itemprop="brand">Apple</p>
+                        </header>
+                        
+                        <p class="product-description text-gray-600 mb-6 leading-relaxed" 
+                           itemprop="description">
+                            Versatile tablet with M1 chip, 10.9-inch Liquid Retina display, and support for Apple Pencil and Magic Keyboard.
+                        </p>
+                        
+                        <div class="product-pricing flex items-center justify-between mb-4">
+                            <span class="product-price text-3xl font-bold text-green-600" 
+                                  itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                <span itemprop="price" content="599">$599</span>
+                                <meta itemprop="priceCurrency" content="USD">
+                            </span>
+                            <span class="product-availability bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
+                                In Stock
+                            </span>
+                        </div>
+                        
+                        <div class="product-specs flex flex-wrap gap-2">
+                            <span class="spec-item bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">M1 Chip</span>
+                            <span class="spec-item bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">10.9" Display</span>
+                            <span class="spec-item bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">64GB</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 5 -->
+                <article class="product-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100" 
+                         itemscope itemtype="https://schema.org/Product"
+                         data-product-id="watch-001">
+                    <div class="overflow-hidden">
+                        <img src="/placeholder.svg?height=250&width=400" 
+                             alt="Apple Watch Series 9" 
+                             class="product-image w-full h-56 object-cover"
+                             itemprop="image">
+                    </div>
+                    
+                    <div class="p-6">
+                        <header class="mb-4">
+                            <h3 class="product-name text-xl font-bold text-gray-900" 
+                                itemprop="name">Apple Watch Series 9</h3>
+                            <p class="product-brand text-sm text-blue-600 font-medium" 
+                               itemprop="brand">Apple</p>
+                        </header>
+                        
+                        <p class="product-description text-gray-600 mb-6 leading-relaxed" 
+                           itemprop="description">
+                            Advanced smartwatch with health monitoring, fitness tracking, and seamless iPhone integration. 45mm case size.
+                        </p>
+                        
+                        <div class="product-pricing flex items-center justify-between mb-4">
+                            <span class="product-price text-3xl font-bold text-green-600" 
+                                  itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                <span itemprop="price" content="399">$399</span>
+                                <meta itemprop="priceCurrency" content="USD">
+                            </span>
+                            <span class="product-availability bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
+                                In Stock
+                            </span>
+                        </div>
+                        
+                        <div class="product-specs flex flex-wrap gap-2">
+                            <span class="spec-item bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">45mm Case</span>
+                            <span class="spec-item bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">GPS + Cellular</span>
+                            <span class="spec-item bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Health Sensors</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 6 -->
+                <article class="product-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100" 
+                         itemscope itemtype="https://schema.org/Product"
+                         data-product-id="speaker-001">
+                    <div class="overflow-hidden">
+                        <img src="/placeholder.svg?height=250&width=400" 
+                             alt="HomePod mini" 
+                             class="product-image w-full h-56 object-cover"
+                             itemprop="image">
+                    </div>
+                    
+                    <div class="p-6">
+                        <header class="mb-4">
+                            <h3 class="product-name text-xl font-bold text-gray-900" 
+                                itemprop="name">HomePod mini</h3>
+                            <p class="product-brand text-sm text-blue-600 font-medium" 
+                               itemprop="brand">Apple</p>
+                        </header>
+                        
+                        <p class="product-description text-gray-600 mb-6 leading-relaxed" 
+                           itemprop="description">
+                            Compact smart speaker with impressive sound quality, Siri integration, and smart home control capabilities.
+                        </p>
+                        
+                        <div class="product-pricing flex items-center justify-between mb-4">
+                            <span class="product-price text-3xl font-bold text-green-600" 
+                                  itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                <span itemprop="price" content="99">$99</span>
+                                <meta itemprop="priceCurrency" content="USD">
+                            </span>
+                            <span class="product-availability bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
+                                In Stock
+                            </span>
+                        </div>
+                        
+                        <div class="product-specs flex flex-wrap gap-2">
+                            <span class="spec-item bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">360° Audio</span>
+                            <span class="spec-item bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Siri Built-in</span>
+                            <span class="spec-item bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Smart Home</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- <CHANGE> Enhanced footer with better styling -->
+    <footer class="bg-gray-900 text-white mt-20">
+        <div class="max-w-6xl mx-auto px-4 py-12">
+            <div class="text-center">
+                <h3 class="text-2xl font-bold mb-3">Premium Electronics</h3>
+                <p class="text-gray-400 text-lg">Quality products, exceptional service</p>
+                <div class="mt-6 text-gray-500 text-sm">
+                    <p>&copy; 2025 Premium Electronics. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
