@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Catalog - Premium Electronics</title>
+    <title>Premium Electronics Store</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <meta name="description" content="Browse our premium electronics catalog with laptops, smartphones, and accessories">
-    <!-- <CHANGE> Added custom styles for enhanced visual appeal -->
     <style>
         .product-card {
             transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
@@ -24,284 +22,677 @@
     </style>
 </head>
 <body class="bg-gradient-to-br from-gray-50 to-gray-100 font-sans">
-    <!-- <CHANGE> Enhanced header with gradient background -->
     <header class="bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg">
         <div class="max-w-6xl mx-auto px-4 py-8">
             <h1 class="text-4xl font-bold">Premium Electronics</h1>
-            <p class="text-blue-100 mt-2 text-lg">Discover our curated collection of high-quality electronics</p>
+            <p class="text-blue-100 mt-2 text-lg">Discover our curated collection</p>
         </div>
     </header>
 
     <main class="max-w-6xl mx-auto px-4 py-12">
-        <section class="mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Featured Products</h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" role="list">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Product 1 -->
+            <article class="product-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                <div class="overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e" 
+                         alt="Wireless Headphones" 
+                         class="product-image w-full h-56 object-cover">
+                </div>
                 
-                <!-- Product 1 -->
-                <article class="product-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100" 
-                         itemscope itemtype="https://schema.org/Product"
-                         data-product-id="laptop-001">
-                    <!-- <CHANGE> Updated image with specific product query and enhanced styling -->
-                    <div class="overflow-hidden">
-                        <img src="/placeholder.svg?height=250&width=400" 
-                             alt="MacBook Pro 14-inch" 
-                             class="product-image w-full h-56 object-cover"
-                             itemprop="image">
+                <div class="p-6">
+                    <header class="mb-4">
+                        <h3 class="text-xl font-bold text-gray-900">Wireless Headphones</h3>
+                        <p class="text-sm text-blue-600 font-medium">Premium Audio</p>
+                    </header>
+                    
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        High-quality sound and comfort with active noise cancellation
+                    </p>
+                    
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-3xl font-bold text-green-600">₹1,999</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
+                            In Stock
+                        </span>
                     </div>
                     
-                    <div class="p-6">
-                        <header class="mb-4">
-                            <h3 class="product-name text-xl font-bold text-gray-900" 
-                                itemprop="name">MacBook Pro 14-inch</h3>
-                            <p class="product-brand text-sm text-blue-600 font-medium" 
-                               itemprop="brand">Apple</p>
-                        </header>
-                        
-                        <p class="product-description text-gray-600 mb-6 leading-relaxed" 
-                           itemprop="description">
-                            Powerful laptop with M3 chip, 16GB RAM, and 512GB SSD. Perfect for creative professionals and developers.
-                        </p>
-                        
-                        <div class="product-pricing flex items-center justify-between mb-4">
-                            <span class="product-price text-3xl font-bold text-green-600" 
-                                  itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-                                <span itemprop="price" content="1999">$1,999</span>
-                                <meta itemprop="priceCurrency" content="USD">
-                            </span>
-                            <span class="product-availability bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
-                                In Stock
-                            </span>
-                        </div>
-                        
-                        <div class="product-specs flex flex-wrap gap-2">
-                            <span class="spec-item bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">M3 Chip</span>
-                            <span class="spec-item bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">16GB RAM</span>
-                            <span class="spec-item bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">512GB SSD</span>
-                        </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Wireless</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Bluetooth 5.0</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">40H Battery</span>
                     </div>
-                </article>
+                </div>
+            </article>
 
-                <!-- Product 2 -->
-                <article class="product-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100" 
-                         itemscope itemtype="https://schema.org/Product"
-                         data-product-id="phone-001">
-                    <div class="overflow-hidden">
-                        <img src="/placeholder.svg?height=250&width=400" 
-                             alt="iPhone 15 Pro" 
-                             class="product-image w-full h-56 object-cover"
-                             itemprop="image">
+            <!-- Product 2 -->
+            <article class="product-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                <div class="overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12" 
+                         alt="Smart Watch" 
+                         class="product-image w-full h-56 object-cover">
+                </div>
+                
+                <div class="p-6">
+                    <header class="mb-4">
+                        <h3 class="text-xl font-bold text-gray-900">Smart Watch</h3>
+                        <p class="text-sm text-blue-600 font-medium">Fitness & Health</p>
+                    </header>
+                    
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Track your fitness, heart rate, and notifications seamlessly
+                    </p>
+                    
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-3xl font-bold text-green-600">₹2,999</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
+                            In Stock
+                        </span>
                     </div>
                     
-                    <div class="p-6">
-                        <header class="mb-4">
-                            <h3 class="product-name text-xl font-bold text-gray-900" 
-                                itemprop="name">iPhone 15 Pro</h3>
-                            <p class="product-brand text-sm text-blue-600 font-medium" 
-                               itemprop="brand">Apple</p>
-                        </header>
-                        
-                        <p class="product-description text-gray-600 mb-6 leading-relaxed" 
-                           itemprop="description">
-                            Latest iPhone with titanium design, A17 Pro chip, and advanced camera system. Available in multiple colors.
-                        </p>
-                        
-                        <div class="product-pricing flex items-center justify-between mb-4">
-                            <span class="product-price text-3xl font-bold text-green-600" 
-                                  itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-                                <span itemprop="price" content="999">$999</span>
-                                <meta itemprop="priceCurrency" content="USD">
-                            </span>
-                            <span class="product-availability bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
-                                In Stock
-                            </span>
-                        </div>
-                        
-                        <div class="product-specs flex flex-wrap gap-2">
-                            <span class="spec-item bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">A17 Pro</span>
-                            <span class="spec-item bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">128GB</span>
-                            <span class="spec-item bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Titanium</span>
-                        </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">GPS</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Heart Rate Monitor</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Water Resistant</span>
                     </div>
-                </article>
+                </div>
+            </article>
 
-                <!-- Product 3 -->
-                <article class="product-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100" 
-                         itemscope itemtype="https://schema.org/Product"
-                         data-product-id="headphones-001">
-                    <div class="overflow-hidden">
-                        <img src="/placeholder.svg?height=250&width=400" 
-                             alt="AirPods Pro 2nd Gen" 
-                             class="product-image w-full h-56 object-cover"
-                             itemprop="image">
+            <!-- Product 3 -->
+            <article class="product-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                <div class="overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1" 
+                         alt="Bluetooth Speaker" 
+                         class="product-image w-full h-56 object-cover">
+                </div>
+                
+                <div class="p-6">
+                    <header class="mb-4">
+                        <h3 class="text-xl font-bold text-gray-900">Bluetooth Speaker</h3>
+                        <p class="text-sm text-blue-600 font-medium">Portable Sound</p>
+                    </header>
+                    
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Enjoy deep bass and clear sound wherever you go
+                    </p>
+                    
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-3xl font-bold text-green-600">₹1,499</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
+                            In Stock
+                        </span>
                     </div>
                     
-                    <div class="p-6">
-                        <header class="mb-4">
-                            <h3 class="product-name text-xl font-bold text-gray-900" 
-                                itemprop="name">AirPods Pro 2nd Gen</h3>
-                            <p class="product-brand text-sm text-blue-600 font-medium" 
-                               itemprop="brand">Apple</p>
-                        </header>
-                        
-                        <p class="product-description text-gray-600 mb-6 leading-relaxed" 
-                           itemprop="description">
-                            Premium wireless earbuds with active noise cancellation, spatial audio, and up to 30 hours of battery life.
-                        </p>
-                        
-                        <div class="product-pricing flex items-center justify-between mb-4">
-                            <span class="product-price text-3xl font-bold text-green-600" 
-                                  itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-                                <span itemprop="price" content="249">$249</span>
-                                <meta itemprop="priceCurrency" content="USD">
-                            </span>
-                            <span class="product-availability bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-medium">
-                                Low Stock
-                            </span>
-                        </div>
-                        
-                        <div class="product-specs flex flex-wrap gap-2">
-                            <span class="spec-item bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Active ANC</span>
-                            <span class="spec-item bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">30hr Battery</span>
-                            <span class="spec-item bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Spatial Audio</span>
-                        </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Bluetooth 5.0</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">12H Battery</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Water Resistant</span>
                     </div>
-                </article>
+                </div>
+            </article>
 
-                <!-- Product 4 -->
-                <article class="product-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100" 
-                         itemscope itemtype="https://schema.org/Product"
-                         data-product-id="tablet-001">
-                    <div class="overflow-hidden">
-                        <img src="/placeholder.svg?height=250&width=400" 
-                             alt="iPad Air 5th Gen" 
-                             class="product-image w-full h-56 object-cover"
-                             itemprop="image">
+            <!-- Product 4 -->
+            <article class="product-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                <div class="overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32" 
+                         alt="DSLR Camera" 
+                         class="product-image w-full h-56 object-cover">
+                </div>
+                
+                <div class="p-6">
+                    <header class="mb-4">
+                        <h3 class="text-xl font-bold text-gray-900">DSLR Camera</h3>
+                        <p class="text-sm text-blue-600 font-medium">Photography</p>
+                    </header>
+                    
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Capture stunning photos and videos with professional quality
+                    </p>
+                    
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-3xl font-bold text-green-600">₹45,999</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
+                            In Stock
+                        </span>
                     </div>
                     
-                    <div class="p-6">
-                        <header class="mb-4">
-                            <h3 class="product-name text-xl font-bold text-gray-900" 
-                                itemprop="name">iPad Air 5th Gen</h3>
-                            <p class="product-brand text-sm text-blue-600 font-medium" 
-                               itemprop="brand">Apple</p>
-                        </header>
-                        
-                        <p class="product-description text-gray-600 mb-6 leading-relaxed" 
-                           itemprop="description">
-                            Versatile tablet with M1 chip, 10.9-inch Liquid Retina display, and support for Apple Pencil and Magic Keyboard.
-                        </p>
-                        
-                        <div class="product-pricing flex items-center justify-between mb-4">
-                            <span class="product-price text-3xl font-bold text-green-600" 
-                                  itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-                                <span itemprop="price" content="599">$599</span>
-                                <meta itemprop="priceCurrency" content="USD">
-                            </span>
-                            <span class="product-availability bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
-                                In Stock
-                            </span>
-                        </div>
-                        
-                        <div class="product-specs flex flex-wrap gap-2">
-                            <span class="spec-item bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">M1 Chip</span>
-                            <span class="spec-item bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">10.9" Display</span>
-                            <span class="spec-item bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">64GB</span>
-                        </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">24MP</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">4K Video</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Interchangeable Lens</span>
                     </div>
-                </article>
+                </div>
+            </article>
 
-                <!-- Product 5 -->
-                <article class="product-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100" 
-                         itemscope itemtype="https://schema.org/Product"
-                         data-product-id="watch-001">
-                    <div class="overflow-hidden">
-                        <img src="/placeholder.svg?height=250&width=400" 
-                             alt="Apple Watch Series 9" 
-                             class="product-image w-full h-56 object-cover"
-                             itemprop="image">
+            <!-- Product 5 -->
+            <article class="product-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                <div class="overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853" 
+                         alt="Laptop" 
+                         class="product-image w-full h-56 object-cover">
+                </div>
+                
+                <div class="p-6">
+                    <header class="mb-4">
+                        <h3 class="text-xl font-bold text-gray-900">Laptop</h3>
+                        <p class="text-sm text-blue-600 font-medium">Computing</p>
+                    </header>
+                    
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Powerful performance for work, school, and play
+                    </p>
+                    
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-3xl font-bold text-green-600">₹55,999</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
+                            In Stock
+                        </span>
                     </div>
                     
-                    <div class="p-6">
-                        <header class="mb-4">
-                            <h3 class="product-name text-xl font-bold text-gray-900" 
-                                itemprop="name">Apple Watch Series 9</h3>
-                            <p class="product-brand text-sm text-blue-600 font-medium" 
-                               itemprop="brand">Apple</p>
-                        </header>
-                        
-                        <p class="product-description text-gray-600 mb-6 leading-relaxed" 
-                           itemprop="description">
-                            Advanced smartwatch with health monitoring, fitness tracking, and seamless iPhone integration. 45mm case size.
-                        </p>
-                        
-                        <div class="product-pricing flex items-center justify-between mb-4">
-                            <span class="product-price text-3xl font-bold text-green-600" 
-                                  itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-                                <span itemprop="price" content="399">$399</span>
-                                <meta itemprop="priceCurrency" content="USD">
-                            </span>
-                            <span class="product-availability bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
-                                In Stock
-                            </span>
-                        </div>
-                        
-                        <div class="product-specs flex flex-wrap gap-2">
-                            <span class="spec-item bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">45mm Case</span>
-                            <span class="spec-item bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">GPS + Cellular</span>
-                            <span class="spec-item bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Health Sensors</span>
-                        </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">16GB RAM</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">512GB SSD</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Intel i7</span>
                     </div>
-                </article>
+                </div>
+            </article>
 
-                <!-- Product 6 -->
-                <article class="product-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100" 
-                         itemscope itemtype="https://schema.org/Product"
-                         data-product-id="speaker-001">
-                    <div class="overflow-hidden">
-                        <img src="/placeholder.svg?height=250&width=400" 
-                             alt="HomePod mini" 
-                             class="product-image w-full h-56 object-cover"
-                             itemprop="image">
+            <!-- Product 6 -->
+            <article class="product-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                <div class="overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1486572788966-cfd3df1f5b42" 
+                         alt="Gaming Console" 
+                         class="product-image w-full h-56 object-cover">
+                </div>
+                
+                <div class="p-6">
+                    <header class="mb-4">
+                        <h3 class="text-xl font-bold text-gray-900">Gaming Console</h3>
+                        <p class="text-sm text-blue-600 font-medium">Entertainment</p>
+                    </header>
+                    
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Next-gen gaming experience with stunning graphics
+                    </p>
+                    
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-3xl font-bold text-green-600">₹39,999</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
+                            In Stock
+                        </span>
                     </div>
                     
-                    <div class="p-6">
-                        <header class="mb-4">
-                            <h3 class="product-name text-xl font-bold text-gray-900" 
-                                itemprop="name">HomePod mini</h3>
-                            <p class="product-brand text-sm text-blue-600 font-medium" 
-                               itemprop="brand">Apple</p>
-                        </header>
-                        
-                        <p class="product-description text-gray-600 mb-6 leading-relaxed" 
-                           itemprop="description">
-                            Compact smart speaker with impressive sound quality, Siri integration, and smart home control capabilities.
-                        </p>
-                        
-                        <div class="product-pricing flex items-center justify-between mb-4">
-                            <span class="product-price text-3xl font-bold text-green-600" 
-                                  itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-                                <span itemprop="price" content="99">$99</span>
-                                <meta itemprop="priceCurrency" content="USD">
-                            </span>
-                            <span class="product-availability bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
-                                In Stock
-                            </span>
-                        </div>
-                        
-                        <div class="product-specs flex flex-wrap gap-2">
-                            <span class="spec-item bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">360° Audio</span>
-                            <span class="spec-item bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Siri Built-in</span>
-                            <span class="spec-item bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Smart Home</span>
-                        </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">4K Gaming</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">1TB SSD</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Ray Tracing</span>
                     </div>
-                </article>
+                </div>
+            </article>
 
-            </div>
-        </section>
+            <!-- Product 7 -->
+            <article class="product-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                <div class="overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1" 
+                         alt="4K Smart TV" 
+                         class="product-image w-full h-56 object-cover">
+                </div>
+                
+                <div class="p-6">
+                    <header class="mb-4">
+                        <h3 class="text-xl font-bold text-gray-900">4K Smart TV</h3>
+                        <p class="text-sm text-blue-600 font-medium">Home Entertainment</p>
+                    </header>
+                    
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Ultra HD entertainment with vibrant colors and deep contrast
+                    </p>
+                    
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-3xl font-bold text-green-600">₹59,999</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
+                            In Stock
+                        </span>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Smart TV</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">4K UHD</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">HDR10+</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Product 8 -->
+            <article class="product-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                <div class="overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1561154464-82e9adf32764" 
+                         alt="Tablet" 
+                         class="product-image w-full h-56 object-cover">
+                </div>
+                
+                <div class="p-6">
+                    <header class="mb-4">
+                        <h3 class="text-xl font-bold text-gray-900">Tablet</h3>
+                        <p class="text-sm text-blue-600 font-medium">Portable Computing</p>
+                    </header>
+                    
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Lightweight and versatile, perfect for work and play
+                    </p>
+                    
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-3xl font-bold text-green-600">₹18,999</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
+                            In Stock
+                        </span>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">10.5" Display</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">128GB Storage</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Wi-Fi + Cellular</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Product 9 -->
+            <article class="product-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                <div class="overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1527864550417-7fd91fc51a46" 
+                         alt="Wireless Mouse" 
+                         class="product-image w-full h-56 object-cover">
+                </div>
+                
+                <div class="p-6">
+                    <header class="mb-4">
+                        <h3 class="text-xl font-bold text-gray-900">Wireless Mouse</h3>
+                        <p class="text-sm text-blue-600 font-medium">Computer Accessories</p>
+                    </header>
+                    
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Ergonomic and precise, enhances your computing experience
+                    </p>
+                    
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-3xl font-bold text-green-600">₹799</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
+                            In Stock
+                        </span>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Wireless</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">USB Receiver</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">1600 DPI</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Product 10 -->
+            <article class="product-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                <div class="overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1601445638532-3c6f6c3aa1d6" 
+                         alt="Mechanical Keyboard" 
+                         class="product-image w-full h-56 object-cover">
+                </div>
+                
+                <div class="p-6">
+                    <header class="mb-4">
+                        <h3 class="text-xl font-bold text-gray-900">Mechanical Keyboard</h3>
+                        <p class="text-sm text-blue-600 font-medium">Computer Accessories</p>
+                    </header>
+                    
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Responsive keys with RGB lighting for an immersive experience
+                    </p>
+                    
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-3xl font-bold text-green-600">₹2,499</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
+                            In Stock
+                        </span>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Mechanical</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">RGB Lighting</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">USB-C</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Product 11 -->
+            <article class="product-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                <div class="overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" 
+                         alt="Air Purifier" 
+                         class="product-image w-full h-56 object-cover">
+                </div>
+                
+                <div class="p-6">
+                    <header class="mb-4">
+                        <h3 class="text-xl font-bold text-gray-900">Air Purifier</h3>
+                        <p class="text-sm text-blue-600 font-medium">Home Appliances</p>
+                    </header>
+                    
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Breathe clean and fresh air with our advanced air purifiers
+                    </p>
+                    
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-3xl font-bold text-green-600">₹12,999</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
+                            In Stock
+                        </span>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">HEPA Filter</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Activated Carbon</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">UV-C Light</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Product 12 -->
+            <article class="product-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                <div class="overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308" 
+                         alt="Electric Kettle" 
+                         class="product-image w-full h-56 object-cover">
+                </div>
+                
+                <div class="p-6">
+                    <header class="mb-4">
+                        <h3 class="text-xl font-bold text-gray-900">Electric Kettle</h3>
+                        <p class="text-sm text-blue-600 font-medium">Kitchen Appliances</p>
+                    </header>
+                    
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Boil water in minutes with our efficient electric kettles
+                    </p>
+                    
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-3xl font-bold text-green-600">₹1,499</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
+                            In Stock
+                        </span>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">1.5L Capacity</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Auto Shut-off</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Boil-Dry Protection</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Product 13 -->
+            <article class="product-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                <div class="overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5" 
+                         alt="Refrigerator" 
+                         class="product-image w-full h-56 object-cover">
+                </div>
+                
+                <div class="p-6">
+                    <header class="mb-4">
+                        <h3 class="text-xl font-bold text-gray-900">Refrigerator</h3>
+                        <p class="text-sm text-blue-600 font-medium">Home Appliances</p>
+                    </header>
+                    
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Keep your food fresh with our energy-efficient refrigerators
+                    </p>
+                    
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-3xl font-bold text-green-600">₹25,999</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
+                            In Stock
+                        </span>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Frost Free</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Multi Air Flow</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">LED Lighting</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Product 14 -->
+            <article class="product-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                <div class="overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1585659722983-3a675dabf23d" 
+                         alt="Microwave Oven" 
+                         class="product-image w-full h-56 object-cover">
+                </div>
+                
+                <div class="p-6">
+                    <header class="mb-4">
+                        <h3 class="text-xl font-bold text-gray-900">Microwave Oven</h3>
+                        <p class="text-sm text-blue-600 font-medium">Kitchen Appliances</p>
+                    </header>
+                    
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Quick heating and cooking with our advanced microwave ovens
+                    </p>
+                    
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-3xl font-bold text-green-600">₹8,999</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
+                            In Stock
+                        </span>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Convection</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Grill</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Touch Control</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Product 15 -->
+            <article class="product-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                <div class="overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1599619351208-3e6c839d6828" 
+                         alt="Air Conditioner" 
+                         class="product-image w-full h-56 object-cover">
+                </div>
+                
+                <div class="p-6">
+                    <header class="mb-4">
+                        <h3 class="text-xl font-bold text-gray-900">Air Conditioner</h3>
+                        <p class="text-sm text-blue-600 font-medium">Home Appliances</p>
+                    </header>
+                    
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Stay cool in summer with our energy-efficient air conditioners
+                    </p>
+                    
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-3xl font-bold text-green-600">₹32,999</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
+                            In Stock
+                        </span>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Split AC</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Inverter Technology</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Remote Control</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Product 16 -->
+            <article class="product-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                <div class="overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1" 
+                         alt="Washing Machine" 
+                         class="product-image w-full h-56 object-cover">
+                </div>
+                
+                <div class="p-6">
+                    <header class="mb-4">
+                        <h3 class="text-xl font-bold text-gray-900">Washing Machine</h3>
+                        <p class="text-sm text-blue-600 font-medium">Home Appliances</p>
+                    </header>
+                    
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Efficient and silent washing for your laundry needs
+                    </p>
+                    
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-3xl font-bold text-green-600">₹22,499</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
+                            In Stock
+                        </span>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Front Load</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">8kg Capacity</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Energy Star Rated</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Product 17 -->
+            <article class="product-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                <div class="overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1572119865084-43c285814d63" 
+                         alt="Coffee Maker" 
+                         class="product-image w-full h-56 object-cover">
+                </div>
+                
+                <div class="p-6">
+                    <header class="mb-4">
+                        <h3 class="text-xl font-bold text-gray-900">Coffee Maker</h3>
+                        <p class="text-sm text-blue-600 font-medium">Kitchen Appliances</p>
+                    </header>
+                    
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Brew perfect coffee with our range of coffee makers
+                    </p>
+                    
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-3xl font-bold text-green-600">₹4,499</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
+                            In Stock
+                        </span>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Drip Coffee</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Programmable</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Auto Shut-off</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Product 18 -->
+            <article class="product-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                <div class="overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1558317374-067fb5f30001" 
+                         alt="Vacuum Cleaner" 
+                         class="product-image w-full h-56 object-cover">
+                </div>
+                
+                <div class="p-6">
+                    <header class="mb-4">
+                        <h3 class="text-xl font-bold text-gray-900">Vacuum Cleaner</h3>
+                        <p class="text-sm text-blue-600 font-medium">Home Appliances</p>
+                    </header>
+                    
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Powerful cleaning solution for a dust-free home
+                    </p>
+                    
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-3xl font-bold text-green-600">₹9,999</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
+                            In Stock
+                        </span>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Bagless</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">HEPA Filter</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Cordless</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Product 19 -->
+            <article class="product-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                <div class="overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd" 
+                         alt="Smartphone" 
+                         class="product-image w-full h-56 object-cover">
+                </div>
+                
+                <div class="p-6">
+                    <header class="mb-4">
+                        <h3 class="text-xl font-bold text-gray-900">Smartphone</h3>
+                        <p class="text-sm text-blue-600 font-medium">Mobile Devices</p>
+                    </header>
+                    
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Latest features, sleek design, and powerful performance
+                    </p>
+                    
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-3xl font-bold text-green-600">₹29,999</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
+                            In Stock
+                        </span>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">6.5" Display</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">128GB Storage</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">48MP Camera</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Product 20 -->
+            <article class="product-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                <div class="overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1473968512647-3e447244af8f" 
+                         alt="Drone" 
+                         class="product-image w-full h-56 object-cover">
+                </div>
+                
+                <div class="p-6">
+                    <header class="mb-4">
+                        <h3 class="text-xl font-bold text-gray-900">Drone</h3>
+                        <p class="text-sm text-blue-600 font-medium">Photography & Videography</p>
+                    </header>
+                    
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Capture aerial shots easily with our user-friendly drones
+                    </p>
+                    
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-3xl font-bold text-green-600">₹19,999</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
+                            In Stock
+                        </span>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">4K Camera</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">30 Min Flight Time</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">GPS Assisted</span>
+                    </div>
+                </div>
+            </article>
+        </div>
     </main>
 
-    <!-- <CHANGE> Enhanced footer with better styling -->
     <footer class="bg-gray-900 text-white mt-20">
         <div class="max-w-6xl mx-auto px-4 py-12">
             <div class="text-center">
